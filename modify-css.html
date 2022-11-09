@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app/jquery.js"></script>
+    <script>
+        $("document").ready(function () {
+
+            $("#add-class").click(function(){
+                $("p:first").addClass('color');
+            })
+
+            $("#remove-class").click(function(){
+                $("p:first").removeClass('color');
+            })
+
+            $("#toggle-class").click(function(){
+                $("p:first").toggleClass('color');
+            })
+            $("#increase-class").click(function(){
+                $("p:first").css("font-size","+=1px");
+            })
+            
+        });
+    </script>
+    <style>
+        .color{
+            color: blue;
+        }
+    </style>
+    <title>JQuery tutorial</title>
+</head>
+<body>
+    <a id="add-class" href="#">Add class</a>
+    <a id="remove-class" href="#">remove class</a>
+    <a id="toggle-class" href="#">toggle class</a>
+    <a id="increase-class" href="#">Increase class</a>
+<img src="" alt="">
+
+    <div id="container">
+        <p>1Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum</p>
+        <p>2Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum</p>
+        <p>3Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app/jquery.js"></script>
+    <script>
+        $("document").ready(function () {
+            $("#append").click(function(){
+                $("p:first").append("I just appended some compy");
+            });
+            $("#prepend").click(function(){
+                $("p:first").prepend("I just prepended some compy");
+            });
+            
+        });
+    </script>
+    <style>
+
+    </style>
+    <title>JQuery tutorial</title>
+</head>
+<body>
+    <a id="append" href="#">Append</a>
+    <a id="prepend" href="#">prepend</a>
+
+    <div id="container">
+        <p>1Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum</p>
+        <p>2Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum</p>
+        <p>3Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum</p>
+    </div>
+</body>
+</html>

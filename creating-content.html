@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app/jquery.js"></script>
+    <script>
+        $("document").ready(function () {
+            // $("#create_text").click(function(){
+            //     $("#container p:last").text("Replaced and created this text");
+            // });
+            $("#create_variable").click(function(){
+                var newText= $('#container p:last');
+                $("#container p:first").html(newText);
+            })
+        });
+    </script>
+    <style>
+
+    </style>
+    <title>JQuery tutorial</title>
+</head>
+<body>
+    <a id="create" href="#">Create</a>
+    <a id="create_text" href="#">Create Text</a>
+    <a id="create_variable" href="#">Create Text</a>
+    <div id="container">
+        <p>1Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum</p>
+        <p>2Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum</p>
+        <p>3Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum</p>
+    </div>
+</body>
+</html>

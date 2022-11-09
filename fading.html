@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app/jquery.js"></script>
+    <script>
+        $("document").ready(function () {
+
+            $("#fade-in").on("click", function(){
+                $("#textBox").fadeIn(3000, function(){
+                    alert("I'm Done");
+                });
+            });
+            $("#fade-out").on("click", function(){
+                $("#textBox").fadeOut("fast", function(){
+                    alert("I'm Done Fading Out");
+                });
+            });
+            
+        });
+    </script>
+    <style>
+        #textBox{
+            display: none;
+        }
+    </style>
+    <title>JQuery tutorial</title>
+</head>
+
+<body>
+    <a href="#" id="fade-in">Fade In</a>  |  <a href="#" id="fade-out">Fade Out</a>
+    <div id="textBox">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, quaerat. Sed laboriosam labore rerum provident
+        </p>
+        <p>
+            perferendis ullam corporis possimus omnis repellendus, amet eum expedita sunt officiis eaque inventore eos quo.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

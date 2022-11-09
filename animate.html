@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app/jquery.js"></script>
+    <script>
+        $("document").ready(function () {
+             $("#grow").click(function(){
+                $("#textBox").animate({width:"500px"},2000);
+             });
+             $("#move").click(function(){
+                $("#textBox").animate({marginLeft:"200px"},2000);
+             });
+             $("#bigger").click(function(){
+                $("#textBox").animate({fontSize:"40px"},3000);
+             });
+             $("#many-things").click(function(){
+                $("#textBox").animate({fontSize:"40px", marginLeft:"400px", width:"600px"},2000);
+             });
+            
+
+
+        });
+    </script>
+    <style>
+        #textBox{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+            position: absolute;
+            margin-top: 20px;
+        }
+    </style>
+    <title>JQuery tutorial</title>
+</head>
+
+<body>
+    <a href="#" id="grow">Grow</a>
+    <a href="#" id="move">Move</a>
+    <a href="#" id="bigger">Bigger</a>
+    <a href="#" id="many-things">Many Things</a>
+    <div id="textBox">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, quaerat. Sed laboriosam labore rerum provident
+        </p>
+        <p>
+            perferendis ullam corporis possimus omnis repellendus, amet eum expedita sunt officiis eaque inventore eos quo.
+        </p>
+    </div>
+
+
+</body>
+
+</html>
